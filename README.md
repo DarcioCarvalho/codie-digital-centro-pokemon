@@ -36,7 +36,7 @@ O projeto **Centro Pokémon** tem como sua principal funcionalidade agendar cons
 *Para simular o tempo de resposta do servidor, ao enviar o agendamento foi incluído uma tempo de espera de 1,5 segundos.
 
 - Quando o agendamento é bem sucedido, a aplicação mostra uma mensagem de _"Consulta Agendada"_ e quando tem falha é mostrada uma mensagem de _"Houve um problema no agendamento"_.<br>
-*Para simular a falha na requisição do agendamento, foi desenvolvido um código randômico que escolherá entre executar **sem** ou **com** falha na proporção de 3/1 para execução sem falha.
+*Para simular a falha na requisição do agendamento, foi desenvolvido um código randômico que escolherá entre executar **sem** ou **com** falha na proporção de 1/3 para execução com falha.
 
 - Foi implementado um tratamento para possíveis erros nas chamadas da API, tanto interno da aplicação quanto da "pokeapi.co", onde é mostrado em tela o status do erro e a mensagem personalizada.
 
