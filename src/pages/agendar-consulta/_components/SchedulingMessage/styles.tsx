@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Text } from "../../../../components/Text";
 
 export const MessageContainer = styled.div`
     display: flex;
@@ -14,10 +15,28 @@ export const MessageContainer = styled.div`
     border-radius: 0.5rem;
     background-color: #DF868610;
     color: #747474;
+
+    @media screen and (max-width: 426px) {
+      max-width: 24rem;
+    }
+
+    @media screen and (max-width: 376px) {
+      max-width: 18rem;
+    }
 `;
 
 export const Heading = styled.h1`
   font-size: 1.25rem;
   font-weight: bold;
   color: #1D1D1D;
+
+  @media screen and (max-width: 376px) {
+      text-align: center;
+  }
 `;
+
+export const MessageText = styled(Text)`
+  @media screen and (max-width: 376px) {
+      text-align: center;
+  }
+`

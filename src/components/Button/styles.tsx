@@ -21,4 +21,8 @@ export const ButtonComponent = styled.button`
   &:active {
     transform: scale(0.97);
   }
+
+  @media screen and (max-width: 768px) {
+    height: 2.325rem;
+  }
 `;

@@ -36,6 +36,18 @@ export const LogoButton = styled.div<{ $expandedSize?: boolean; $isHome?: boolea
     ` :
     ''
   }
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+    max-width: ${props => props.$expandedSize ? "14.759rem" : "3.24rem"};
+    height: 3.24rem;
+    gap: 0.5rem;
+
+    &:hover{
+      max-width: 14.759rem;
+    }
+  }
+
   
 
 `;
@@ -44,6 +56,10 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 0.6875rem;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0.46rem;
+  }
 `;
 
 export const LogoLabel = styled.span`

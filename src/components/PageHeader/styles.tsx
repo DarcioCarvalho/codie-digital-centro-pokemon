@@ -8,6 +8,17 @@ export const HeaderContainer = styled.div`
   padding: 2rem 0 0 6.62rem;
   background-color: #E40F0F;
   color: white;
+
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    padding: 1.5rem 0 0 3.62rem;
+  }
+
+  @media screen and (max-width: 426px) {
+    height: 8rem;
+    padding: 1rem 0 0 3rem;
+    gap: 0.4rem;
+  }
 `;
 
 export const AddressBar = styled.div`
@@ -33,6 +44,10 @@ export const Title = styled.h1`
     font-size: 2rem;
     font-weight: 700;
     color: #FFFFFF;
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.75rem;
+  }
 `;
 
 export const Description = styled.span`

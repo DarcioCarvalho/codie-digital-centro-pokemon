@@ -3,7 +3,7 @@ import { SuccessIcon } from "../../../../components/icons/SuccessIcon";
 import { WarningIcon } from "../../../../components/icons/WarningIcon";
 import { Text } from "../../../../components/Text";
 
-import { Heading, MessageContainer } from "./styles";
+import { Heading, MessageContainer, MessageText } from "./styles";
 
 interface SchedulingMessageProps {
   type: "Success" | "Warning";
@@ -29,13 +29,13 @@ export function SchedulingMessage({ type, handleButton, date, time, amountPokemo
 
         <SuccessIcon />
 
-        <Text
+        <MessageText
           style={{ marginBlock: "1.25rem" }}
         >
           Seu agendamento para dia {date}, às {hour}h{minute}m,
           <br />
           para {amountPokemon}x pokémons foi realizado com sucesso!
-        </Text>
+        </MessageText>
 
         <Button
           label="Fazer Novo Agendamento"
@@ -57,11 +57,11 @@ export function SchedulingMessage({ type, handleButton, date, time, amountPokemo
 
       <WarningIcon />
 
-      <Text
+      <MessageText
         style={{ marginBlock: "2rem 1.25rem" }}
       >
         {message ? message : "Problema ao registrar o agendamento da consulta"}
-      </Text>
+      </MessageText>
 
       <Button
         label="Fazer Novo Agendamento"

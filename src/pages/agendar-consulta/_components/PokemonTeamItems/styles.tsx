@@ -27,7 +27,13 @@ export const PokemonTeamItem = styled.div`
 export const NavBarPokemonTeam = styled.nav`
   display: flex;
   justify-content: space-between;
-`
+
+  @media screen and (max-width: 425px) {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: center;
+  }
+`;
 
 export const ButtonAddPokemon = styled.button`
   display: flex;
@@ -77,6 +83,22 @@ export const ButtonDeletePokemon = styled.span`
   font-style: italic;
   cursor: pointer;
   transition: 0.4s;
+
+  @media screen and (max-width: 425px) {
+    margin-right: -14.75rem;
+  }
+
+  @media screen and (max-width: 390px) {
+    margin-right: -13.75rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-right: -12.75rem;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin-right: -10.75rem;
+  }
 
   &:hover {
     color: #ff3232;

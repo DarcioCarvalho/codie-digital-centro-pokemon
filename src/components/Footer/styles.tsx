@@ -8,4 +8,13 @@ export const FooterContainer = styled.footer`
   background-color: #1D1D1D;
   font-size: 0.875rem;
   color: white;
+
+  @media screen and (max-width: 426px) {
+    font-size: 0.625rem;
+    height: 3.5rem;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 0.5rem;
+  }
 `

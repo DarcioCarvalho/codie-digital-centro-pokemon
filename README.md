@@ -40,6 +40,7 @@ O projeto **Centro Pokémon** tem como sua principal funcionalidade agendar cons
 
 - Foi implementado um tratamento para possíveis erros nas chamadas da API, tanto interno da aplicação quanto da "pokeapi.co", onde é mostrado em tela o status do erro e a mensagem personalizada.
 
+- Aplicação Responsiva
 <br>
 
 

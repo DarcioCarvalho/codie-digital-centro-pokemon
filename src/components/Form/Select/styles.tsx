@@ -38,6 +38,26 @@ export const SelectComponent = styled.select<{ $isPlaceholder?: boolean; $direct
     css`
       max-width: 27.375rem;
       width: 100%;
+
+      @media screen and (max-width: 680px) {
+        max-width: 25rem;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 540px) {
+        max-width: 22rem;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 470px) {
+        max-width: 19rem;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 410px) {
+        max-width: 15rem;
+        width: 100%;
+      }
     ` : ""
   }
   
