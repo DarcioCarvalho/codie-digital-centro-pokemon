@@ -43,7 +43,7 @@ O projeto **Centro Pokémon** tem como sua principal funcionalidade agendar cons
 <br>
 
 
-[ACESSE A APLICAÇÃO](https://github.com/DarcioCarvalho/)
+[ACESSE A APLICAÇÃO](https://codie-digital-centro-pokemon.vercel.app/)
 
 
 ## ✨ Tecnologia
