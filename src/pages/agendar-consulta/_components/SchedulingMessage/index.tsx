@@ -1,0 +1,75 @@
+import { Button } from "../../../../components/Button";
+import { SuccessIcon } from "../../../../components/icons/SuccessIcon";
+import { WarningIcon } from "../../../../components/icons/WarningIcon";
+import { Text } from "../../../../components/Text";
+
+import { Heading, MessageContainer } from "./styles";
+
+interface SchedulingMessageProps {
+  type: "Success" | "Warning";
+  handleButton: () => void;
+  date?: string;
+  time?: string;
+  amountPokemon?: string;
+  message?: string;
+}
+
+export function SchedulingMessage({ type, handleButton, date, time, amountPokemon, message }: SchedulingMessageProps) {
+
+  if (type == "Success") {
+    const [hour, minute] = String(time).split(":");
+
+    return (
+      <MessageContainer>
+        <Heading
+          style={{ marginBottom: "1.875rem" }}
+        >
+          Consulta Agendada
+        </Heading>
+
+        <SuccessIcon />
+
+        <Text
+          style={{ marginBlock: "1.25rem" }}
+        >
+          Seu agendamento para dia {date}, às {hour}h{minute}m,
+          <br />
+          para {amountPokemon}x pokémons foi realizado com sucesso!
+        </Text>
+
+        <Button
+          label="Fazer Novo Agendamento"
+          onClick={handleButton}
+        />
+
+
+      </MessageContainer>
+    );
+  }
+
+  return (
+    <MessageContainer>
+      <Heading
+        style={{ marginBottom: "1.5rem" }}
+      >
+        Houve um problema no agendamento
+      </Heading>
+
+      <WarningIcon />
+
+      <Text
+        style={{ marginBlock: "2rem 1.25rem" }}
+      >
+        {message ? message : "Problema ao registrar o agendamento da consulta"}
+      </Text>
+
+      <Button
+        label="Fazer Novo Agendamento"
+        onClick={handleButton}
+      />
+
+    </MessageContainer>
+  );
+
+
+}
